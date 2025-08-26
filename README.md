@@ -1,5 +1,9 @@
 # Qt C++ App: Build & Run Instructions (macOS & Windows)
 
+## About
+### IoT-Device Manager
+The IoT-Device Manager is an educational project developed in C++ and Qt framework that illustrates the prototype for an manager platform for IoT devices in a personalized and user-friendly manner
+
 ## Prerequisites
 
 ### macOS
