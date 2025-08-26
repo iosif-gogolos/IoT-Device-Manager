@@ -106,6 +106,8 @@ The IoT-Device Manager is an educational project developed in C++ and Qt framewo
 ## Example Run
 
 After building, you should see a window with:
+- A prompt that asks the user for their name
 - A terminal-like section streaming `std::cout` output.
 - "Greet the user" button (prints to terminal section).
-- "Click to end the program" button (closes
+- Various buttons that open dialog windows to communicate with hypothetical IoT devices
+- "Click to end the program" button (closes the window and ends the program)
