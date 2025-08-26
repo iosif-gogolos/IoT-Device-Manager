@@ -1,6 +1,4 @@
 #include <iostream>
-#include <streambuf>
-#include <string>
 
 #include <QApplication>
 #include <QInputDialog>
@@ -16,14 +14,19 @@
 
 #include "QTextEditStream.h"
 #include "DeviceDialog.h"
+#include "NamePromptDialog.h"
+#include "Gui.h"
 
 
 int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
 
-    // Prompt user for name
-    QString userName = QInputDialog::getText(nullptr, "Welcome", "Please enter your name: ");
+    NamePromptDialog prompt;
+    if (prompt.exec() != QDialog::Accepted || prompt.name().isEmpty())
+        return 0;
+
+    QString userName = prompt.name();
 
     if (userName.isEmpty()){
         return 0;
