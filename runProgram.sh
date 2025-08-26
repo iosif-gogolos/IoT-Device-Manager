@@ -1,0 +1,1 @@
+./myapp.app/Contents/MacOS/myapp
